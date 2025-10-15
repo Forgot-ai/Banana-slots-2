@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banana Slot Machine 🍌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Settings Button -->
+  <button id="settings-btn" class="settings-btn">⚙️</button>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-content">
+      <h2>Settings</h2>
+
+      <div class="setting">
+        <label>
+          <input type="checkbox" id="skipToggle" />
+          Skip Animation
+        </label>
+      </div>
+
+      <div class="setting">
+        <label for="oddsInput">🍌 Win Odds (1 in <input type="number" id="oddsInput" min="1" value="10" />)</label>
+      </div>
+
+      <div class="buttons">
+        <button id="resetSettings" class="reset-btn">Reset Defaults</button>
+        <button id="closeSettings" class="close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slot Machine -->
+  <div class="container">
+    <h1>🍀 Banana Slot Machine 🍀</h1>
+    <div class="slot-machine">
+      <div class="slot" id="slot1">🍒</div>
+      <div class="slot" id="slot2">🍇</div>
+      <div class="slot" id="slot3">🍉</div>
+    </div>
+    <button id="spin">🎰 Spin</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
